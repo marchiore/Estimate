@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController{
-    IBOutlet UISegmentedControl *controllerSegmented;
-}
+@interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *label1;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
+@property (weak, nonatomic) IBOutlet UITextField *labelTamanho;
 
 -(IBAction)selecionarBotao:(id)sender;
 
